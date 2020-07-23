@@ -35,7 +35,7 @@ public class Q1 {
               
         }
          for (int i = 0; i < n; i++) {
-           System.out.println(tab[i]); 
+           System.out.print(tab[i]); 
         }
  
         
