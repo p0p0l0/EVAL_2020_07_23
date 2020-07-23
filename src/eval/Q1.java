@@ -18,21 +18,30 @@ public class Q1 {
      */
     public static void main(String[] args) {
        Scanner reader = new Scanner(System.in);
-       final int n =3;
+       final int n =10;
        int []tab =new int[n];
-       
+        
         for (int i = 0; i < n; i++) {
             System.out.println("Saisir un nombre");
             tab[i]=reader.nextInt();
             
         }
         
-        for (int i = 0; i < n; i++) {
-           
+        for (int i = 0; i < n/2; i++) {
+          int v=tab[i];
+          tab[i]=tab[n-i-1];
+          tab[n-1-i]=v;
+            
+              
+        }
+         for (int i = 0; i < n; i++) {
+           System.out.println(tab[i]); 
+        }
+ 
         
             
-            System.out.println(tab[i]);  
-        } 
+            
+        
     }
     
 }
