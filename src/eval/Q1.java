@@ -5,6 +5,8 @@
  */
 package eval;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Thierry
@@ -15,7 +17,22 @@ public class Q1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       Scanner reader = new Scanner(System.in);
+       final int n =3;
+       int []tab =new int[n];
+       
+        for (int i = 0; i < n; i++) {
+            System.out.println("Saisir un nombre");
+            tab[i]=reader.nextInt();
+            
+        }
+        
+        for (int i = 0; i < n; i++) {
+           
+        
+            
+            System.out.println(tab[i]);  
+        } 
     }
     
 }
